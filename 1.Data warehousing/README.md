@@ -1,4 +1,4 @@
-# 🗃️Data Warehouse – Scratch to Modern Analytics
+# 🗃️Data Warehousing – Scratch to Modern Analytics
 
 ## 📋 Project Summary
 
