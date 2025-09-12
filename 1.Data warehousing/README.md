@@ -46,5 +46,6 @@ This project implements the **Medallion Architecture** to ensure clarity, scalab
 >├── 2. bronze/ # 🥉 Staging tables - untouched raw data
 >├── 3. silver/ # 🥈 Cleaned & integrated data
 >├── 4. gold/ # 🥇 Business-ready data/views/reports
->└── README.md # 👈 Project overview
+>├── 5. README.md # 👈 Project overview
+>└── 6. script/ # 📂 Database intialization script
 > ```
