@@ -56,12 +56,12 @@ This project implements the **Medallion Architecture** to ensure clarity, scalab
 
 This diagram captures the end-to-end journey of data through each stage of the data warehouse:
 
-#### 1️⃣ Sources
+#### 1. Sources
 
 - **CRM & ERP CSV Files:**  
   The process begins with external data exported from CRM and ERP systems, in CSV format.
 
-#### 2️⃣ Bronze Layer (Staging)
+#### 2. Bronze Layer (Staging)
 
 - **Tables:**  
   - `crm_cust_info`  
@@ -73,7 +73,7 @@ This diagram captures the end-to-end journey of data through each stage of the d
 - **Role:**  
   Each source CSV is loaded exactly as-is into its respective Bronze table, preserving data fidelity and supporting full traceability.
 
-#### 3️⃣ Silver Layer (Cleansing & Integration)
+#### 3. Silver Layer (Cleansing & Integration)
 
 - **Tables:**  
   - `crm_cust_info`  
@@ -85,7 +85,7 @@ This diagram captures the end-to-end journey of data through each stage of the d
 - **Role:**  
   Source data undergoes validation, cleansing, and standardization. No major schema changes yet: structure generally matches Bronze, with improved data quality.
 
-#### 4️⃣ Gold Layer (Analytics/BI Models)
+#### 4. Gold Layer (Analytics/BI Models)
 
 - **Tables/Views:**  
   - `fact_sales`  
