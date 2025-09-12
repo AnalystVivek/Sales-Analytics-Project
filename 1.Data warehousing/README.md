@@ -13,6 +13,19 @@ This project presents a complete, real-world build of a **SQL Data Warehouse**, 
 
 ---
 
+## 📂 Folder Structure
+
+> ```
+>├── 1. raw datasets/ # 📂 Source data (ERP & CRM CSV files)
+>├── 2. bronze/ # 🥉 Staging tables - untouched raw data
+>├── 3. silver/ # 🥈 Cleaned & integrated data
+>├── 4. gold/ # 🥇 Business-ready data/views/reports
+>├── 5. script/ # 📂 Database intialization script
+>└── README.md # 👈 Project overview
+> ```
+
+---
+
 ## 🏗️ Data Architecture (Medallion Model)
 
 This project implements the **Medallion Architecture** to ensure clarity, scalability, and maintainability. 
@@ -36,16 +49,3 @@ This project implements the **Medallion Architecture** to ensure clarity, scalab
 - 🧽 **Data cleaning** (deduplication, type casting, resolving missing values)
 - 🔁 **Data integration** (merging ERP and CRM sources)
 - 🤖 **SQL scripts & stored procedures** for automating repeatable workflows
-
----
-
-## 📂 Folder Structure
-
-> ```
->├── 1. raw datasets/ # 📂 Source data (ERP & CRM CSV files)
->├── 2. bronze/ # 🥉 Staging tables - untouched raw data
->├── 3. silver/ # 🥈 Cleaned & integrated data
->├── 4. gold/ # 🥇 Business-ready data/views/reports
->├── 5. script/ # 📂 Database intialization script
->└── README.md # 👈 Project overview
-> ```
