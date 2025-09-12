@@ -22,7 +22,7 @@ The **Bronze Layer** is the foundation of the data warehousing pipeline, serving
 
 ---
 
-## 📝 Best Practices
+### 📝 Best Practices
 
 - Always run `ddl_bronze.sql` before your first load, or when changing table designs.
 - Use the dedicated stored procedure for consistent, reliable ETL loads—no manual steps needed.
