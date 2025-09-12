@@ -1,6 +1,6 @@
 # 🗃️Data Warehousing – Scratch to Modern Analytics
 
-## 📋 Project Summary
+### 📋 Project Summary
 
 This project presents a complete, real-world build of a **SQL Data Warehouse**, unifying raw ERP & CRM data sources into a robust analytics foundation. Designed for **business intelligence, reporting, and data-driven decisions**, the solution applies best practices in modern data warehousing and ETL development.
 
@@ -13,7 +13,7 @@ This project presents a complete, real-world build of a **SQL Data Warehouse**, 
 
 ---
 
-## 📂 Folder Structure
+### 📂 Folder Structure
 
 > ```
 >├── 1. raw datasets/ # 📂 Source data (ERP & CRM CSV files)
@@ -26,7 +26,7 @@ This project presents a complete, real-world build of a **SQL Data Warehouse**, 
 
 ---
 
-## 🏗️ Data Architecture (Medallion Model)
+### 🏗️ Data Architecture (Medallion Model)
 
 This project implements the **Medallion Architecture** to ensure clarity, scalability, and maintainability. 
 | Layer         | Purpose                                                                                       |
@@ -52,16 +52,16 @@ This project implements the **Medallion Architecture** to ensure clarity, scalab
 
 ---
 
-## 🔄 Data Flow Diagram – Layered ETL Architecture
+### 🔄 Data Flow Diagram – Layered ETL Architecture
 
 This diagram captures the end-to-end journey of data through each stage of the data warehouse:
 
-### 1️⃣ Sources
+#### 1️⃣ Sources
 
 - **CRM & ERP CSV Files:**  
   The process begins with external data exported from CRM and ERP systems, in CSV format.
 
-### 2️⃣ Bronze Layer (Staging)
+#### 2️⃣ Bronze Layer (Staging)
 
 - **Tables:**  
   - `crm_cust_info`  
@@ -73,7 +73,7 @@ This diagram captures the end-to-end journey of data through each stage of the d
 - **Role:**  
   Each source CSV is loaded exactly as-is into its respective Bronze table, preserving data fidelity and supporting full traceability.
 
-### 3️⃣ Silver Layer (Cleansing & Integration)
+#### 3️⃣ Silver Layer (Cleansing & Integration)
 
 - **Tables:**  
   - `crm_cust_info`  
@@ -85,7 +85,7 @@ This diagram captures the end-to-end journey of data through each stage of the d
 - **Role:**  
   Source data undergoes validation, cleansing, and standardization. No major schema changes yet: structure generally matches Bronze, with improved data quality.
 
-### 4️⃣ Gold Layer (Analytics/BI Models)
+#### 4️⃣ Gold Layer (Analytics/BI Models)
 
 - **Tables/Views:**  
   - `fact_sales`  
