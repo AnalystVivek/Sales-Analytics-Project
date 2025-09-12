@@ -49,3 +49,56 @@ This project implements the **Medallion Architecture** to ensure clarity, scalab
 - 🧽 **Data cleaning** (deduplication, type casting, resolving missing values)
 - 🔁 **Data integration** (merging ERP and CRM sources)
 - 🤖 **SQL scripts & stored procedures** for automating repeatable workflows
+
+---
+
+## 🔄 Data Flow Diagram – Layered ETL Architecture
+
+This diagram captures the end-to-end journey of data through each stage of the data warehouse:
+
+### 1️⃣ Sources
+
+- **CRM & ERP CSV Files:**  
+  The process begins with external data exported from CRM and ERP systems, in CSV format.
+
+### 2️⃣ Bronze Layer (Staging)
+
+- **Tables:**  
+  - `crm_cust_info`  
+  - `crm_prd_info`  
+  - `crm_sales_details`  
+  - `erp_cust_az12`  
+  - `erp_loc_a101`  
+  - `erp_px_cat_g1v2`
+- **Role:**  
+  Each source CSV is loaded exactly as-is into its respective Bronze table, preserving data fidelity and supporting full traceability.
+
+### 3️⃣ Silver Layer (Cleansing & Integration)
+
+- **Tables:**  
+  - `crm_cust_info`  
+  - `crm_prd_info`  
+  - `crm_sales_details`  
+  - `erp_cust_az12`  
+  - `erp_loc_a101`  
+  - `erp_px_cat_g1v2`
+- **Role:**  
+  Source data undergoes validation, cleansing, and standardization. No major schema changes yet: structure generally matches Bronze, with improved data quality.
+
+### 4️⃣ Gold Layer (Analytics/BI Models)
+
+- **Tables/Views:**  
+  - `fact_sales`  
+  - `dim_customers`  
+  - `dim_products`
+- **Role:**  
+  Integrated, business-ready data marts are created from Silver.  
+  - **`fact_sales`** is built directly from cleansed `crm_sales_details` and other required Silver tables for transactional analysis.
+  - **`dim_customers`** combines cleansed customer information from both CRM and ERP sources.
+  - **`dim_products`** is constructed from all relevant product/location/category tables.
+
+**Arrow Connections** in the diagram show the transformations, joins, and enrichment steps as data flows from raw sources to fully-modeled, analytics-ready warehouse tables.
+
+This visual makes it easy to understand how raw business data is progressively cleansed, integrated, and modeled into actionable, high-quality datasets for analytics and reporting.
+
+<img width="1733" height="809" alt="image" src="https://github.com/user-attachments/assets/c9923b9f-aaa0-4189-8f15-a33bd15a9142" />
