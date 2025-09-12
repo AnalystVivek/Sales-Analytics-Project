@@ -25,9 +25,10 @@ This project implements the **Medallion Architecture** to ensure clarity, scalab
 <img width="1000" height="600" alt="Screenshot 2025-09-12 102923" src="https://github.com/user-attachments/assets/6d16d9ff-a263-4f38-a475-59d42c7cdd30" />
 
 
-### 🛠️ Technologies Used
+### 🛠️ Tools Used
 - **SQL Server Express** 🗄️
 - **SQL Server Management Studio (SSMS)** 🖥️
+- **Draw.io**📝 (Design data architecture, models, flows, and diagrams.)
 - **Git & GitHub** 🌐
 
 ### ⚙️ ETL Techniques Applied
