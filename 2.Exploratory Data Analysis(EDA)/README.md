@@ -48,3 +48,24 @@ With robust, analytics-ready data in the Gold layer, **EDA enables data analysts
 > _“Think of EDA as your user manual for the data warehouse—making the numbers speak before you build your first report!”_
 
 ---
+
+### 💡 Some Key Findings
+
+- Distribution of sold items across countries
+<img width="277" height="196" alt="image" src="https://github.com/user-attachments/assets/f4a0b9f6-d899-4469-80eb-1266d0944b43" />
+
+- Top 5 high revenue generating products
+<img width="291" height="142" alt="image" src="https://github.com/user-attachments/assets/bafb34c4-4adf-4bf1-89f4-2bf817719ed4" />
+
+- Top 5 worst-performing products in terms of sales
+<img width="288" height="142" alt="image" src="https://github.com/user-attachments/assets/8f8fda55-2b3b-48d4-b986-0aff069808df" />
+
+- Top-10 customers who have generated the high revenue
+<img width="262" height="241" alt="image" src="https://github.com/user-attachments/assets/929d51a5-0096-497c-b082-7606ff68e886" />
+
+- The 3 customers with the fewest orders placed
+<img width="270" height="103" alt="image" src="https://github.com/user-attachments/assets/8eb2860f-6b72-44e3-b4ee-2597fc063e91" />
+
+
+
+---
